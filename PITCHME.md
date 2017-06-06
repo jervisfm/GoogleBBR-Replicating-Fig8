@@ -1,13 +1,14 @@
 ### ReBBR: Reproducing BBR Performance on Lossy Networks
 
-
+<br>
+<br>
 <br>
 <br>
 <br>
 
 <small>Luke Hsiao and Jervis Muindi</small>
 
-June 2017
+<small>June 2017<small>
 
 ---
 
