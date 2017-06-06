@@ -50,7 +50,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
   - Infinite buffer on bottleneck link
 - Google Cloud `n1-standard-2` instance
 - 6.25MB maximum send and receive window sizes
-- Python client sending stream of data to server over emulated link.
+- Python client process sending stream of data to a python server process over emulated link.
 
 ---
 
