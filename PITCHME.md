@@ -93,5 +93,22 @@ dropped at the same time (LRO/GRO settings).
 
 <small>
 BIC designed for "long fat networks" while Westwood was designed
-for high DBP with potential packet loss. Evaluated on 30-second flows.
+for high BDP with potential packet loss. Evaluated on 30-second flows.
 </small>
+
+---
+
+#### Evaluating Effect of BW and RTT
+
+How does BBR compare against CUBIC for different bottleneck bandwidths
+and different RTT values?
+
++++
+##### Varying Bottleneck Bandwidth
+
+![exp1](mahimahi/figures/experiment1.png)
+
++++
+##### Varying Round Trip Time
+
+![exp3](mahimahi/figures/experiment3.png)
