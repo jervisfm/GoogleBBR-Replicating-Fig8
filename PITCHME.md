@@ -23,5 +23,7 @@ June 2017
   congestion control algorithm and a congestion-based algorithm.
 
 ---
-BBR vs CUBIC on a 100Mbps/100-ms link.
+
 ![Fig8](http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png)
+
+BBR vs CUBIC on a 100Mbps/100-ms link
