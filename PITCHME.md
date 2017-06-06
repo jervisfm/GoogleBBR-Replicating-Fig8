@@ -129,7 +129,7 @@ Experiment using the 140-second Verizon LTE trace provided with Mahimahi.
 
 +++
 
-![v-delay](mahimahi/figures/verizon-bw.png)
+![v-delay](mahimahi/figures/verizon-delay.png)
 
 +++
 
