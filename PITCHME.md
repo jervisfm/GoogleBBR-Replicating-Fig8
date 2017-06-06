@@ -52,6 +52,14 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 
 #### Reproducing Figure 8
 
+![Fig8](http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png)
+
++++
+
+![our_fig_8](mahimahi/figures/figure8.png)
+
++++
+
 - Our results agree with the published figure, with minor differences
   - Like the original, CUBIC achieves slightly better throughput than BBR for
     extremely low loss rates.
@@ -70,20 +78,12 @@ those portions of time with a minimal number of packets in flight.
 Differences in emulation: level of correlation of drops, or number of packets
 dropped at the same time (LRO/GRO settings).
 
-+++
-
-![our_fig_8](mahimahi/figures/figure8.png)
-
-+++
-
-![Fig8](http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png)
-
 ---
 
 #### Exploration Experiments
 - Comparing BBR to other TCP congestion control algorithms
 - Evaluating the effect of bottleneck bandwidth and round trip time
-- BBR vs. CUBIC on a Cellular Link
+- BBR vs. CUBIC on a Verizon LTE Trace
 
 ---
 
@@ -91,5 +91,5 @@ dropped at the same time (LRO/GRO settings).
 
 ![exp2](mahimahi/figures/experiment2.png)
 
-- BIC designed for "long fat networks"
-- Westwood designed for high DBP with potential packet loss
+- <small>BIC designed for "long fat networks"</small>
+- <small>Westwood designed for high DBP with potential packet loss</small>
