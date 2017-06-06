@@ -92,6 +92,6 @@ dropped at the same time (LRO/GRO settings).
 ![exp2](mahimahi/figures/experiment2.png)
 
 <small>
-BIC designed for "long fat networks" while <small>Westwood was designed
+BIC designed for "long fat networks" while Westwood was designed
 for high DBP with potential packet loss. Evaluated on 30-second flows.
 </small>
