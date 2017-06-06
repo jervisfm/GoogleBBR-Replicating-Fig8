@@ -111,10 +111,18 @@ and different RTT values?
 
 ![exp1](mahimahi/figures/experiment1.png)
 
+NOTE:
+Performed on 30-second flows. Some of the variance for the low-throughput
+lines could be address by using smaller maximum buffer sizes.
+
 +++
 #### Varying Round Trip Time
 
 ![exp3](mahimahi/figures/experiment3.png)
+
+NOTE:
+Performed on 120-second flows. The decreasing BWs are mainly a result of the
+longer time spent in start up. Longer flow simulations could address this.
 
 ---
 ### BBR vs CUBIC on a Cellular Link
@@ -127,7 +135,6 @@ Experiment using the 140-second Verizon LTE trace provided with Mahimahi.
 +++
 
 ![v-bw](mahimahi/figures/verizon-bw.png)
-
 
 +++
 
