@@ -16,6 +16,8 @@
 - Tries to maximize throughput and minimize latency
 - Does so by estimating the bottleneck bandwidth and round-trip propagation
   delay
+- Deployed in Google's B4 datacenter-to-datacenter high-speed WAN which uses
+  commodity switches.
 
 ---?image=http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson1.png
 
@@ -29,6 +31,7 @@
   congestion control algorithm and a congestion-based algorithm.
 - CUBIC's loss tolerance is a property of the algorithm. BBR's loss tolerance
   is a configuration parameter.
+- 2-25x improvement in throughput on Google's B4.
 
 ---
 
