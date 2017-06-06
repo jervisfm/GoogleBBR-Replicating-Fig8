@@ -60,7 +60,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 ![our_fig_8](mahimahi/figures/figure8.png)
 
 +++
-#### Our Results 
+#### Our Results
 - CUBIC achieves slightly better throughput than BBR for extremely low loss rates.
 - BBR throughput drop until about 45% loss unlike the original paper.
     - This is likely due to a difference in the implementation of the loss
@@ -89,10 +89,9 @@ dropped at the same time (LRO/GRO settings).
 
 ![exp2](mahimahi/figures/experiment2.png)
 
-<small>
+NOTE:
 BIC designed for "long fat networks" while Westwood was designed
 for high BDP with potential packet loss. Evaluated on 30-second flows.
-</small>
 
 ---
 
