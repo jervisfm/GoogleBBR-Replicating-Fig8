@@ -52,17 +52,13 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 
 #### Reproducing Figure 8
 
-![our_fig_8](mahimahi/figures/figure8.png)
-
-<small>
 - Our results agree with the published figure, with minor differences
   - Like the original, CUBIC achieves slightly better throughput than BBR for
     extremely low loss rates.
   - In our experiments, we don't see BBR throughput drop until about 45% loss
     unlike the original paper. This is likely due to a difference in the
-    implmenentation of the loss process in mahimahi vs. the netem-based
+    implementation of the loss process in Mahimahi vs. the netem-based
     emulation used by the authors.
-</small>
 
 Note:
 Specifically, there are two possible factors: (1) the size of the initial
@@ -76,4 +72,24 @@ dropped at the same time (LRO/GRO settings).
 
 +++
 
+![our_fig_8](mahimahi/figures/figure8.png)
+
++++
+
 ![Fig8](http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png)
+
+---
+
+#### Exploration Experiments
+- Comparing BBR to other TCP congestion control algorithms
+- Evaluating the effect of bottleneck bandwidth and round trip time
+- BBR vs. CUBIC on a Cellular Link
+
+---
+
+#### BBR vs. Other TCp Congestion Control
+
+![exp2](mahimahi/figures/experiment2.png)
+
+- BIC designed for "long fat networks"
+- Westwood designed for high DBP with potential packet loss
