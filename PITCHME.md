@@ -100,6 +100,9 @@ for high BDP with potential packet loss. Evaluated on 30-second flows.
 
 #### Evaluating Effect of BW and RTT
 
+<br>
+<br>
+
 How does BBR compare against CUBIC for different bottleneck bandwidths
 and different RTT values?
 
@@ -112,3 +115,40 @@ and different RTT values?
 ##### Varying Round Trip Time
 
 ![exp3](mahimahi/figures/experiment3.png)
+
+---
+#### BBR vs CUBIC on a Cellular Link
+
+All other experiments had fixed bandwidths and delays. How does BBR compare to
+CUBIC when these values change over time?
+
+Experiment using the 140-second Verizon LTE trace provided with Mahimahi.
+
++++
+
+![v-bw](mahimahi/figures/verizon-bw.png)
+
+
++++
+
+![v-delay](mahimahi/figures/verizon-bw.png)
+
++++
+
+![exp4](mahimahi/figures/experiment4.png)
+
+---
+
+#### Challenges
+- Default send and receive buffer maximums in Ubuntu can skew results.
+- Misconfiguring Mahimahi buffer sizes can cause incorrect results.
+- Initially, deadlock could occur between our Python client and server processes.
+
+---
+
+#### Summary
+- Our experiments support the claim of the original paper: in general, BBR
+  performs better than CUBIC for non-negligible loss rates.
+- We find that this behavior holds true across varied bandwidths and RTTs
+- Reproduce our results using [our GitHub repository](https://github.com/jervisfm/rebbr#step-by-step-instructions).
+  Takes about 8.5 hours to run all experiments.
