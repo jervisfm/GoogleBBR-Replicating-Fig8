@@ -60,7 +60,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 ![our_fig_8](mahimahi/figures/figure8.png)
 
 +++
-
+#### Our Results 
 - CUBIC achieves slightly better throughput than BBR for extremely low loss rates.
 - BBR throughput drop until about 45% loss unlike the original paper.
     - This is likely due to a difference in the implementation of the loss
