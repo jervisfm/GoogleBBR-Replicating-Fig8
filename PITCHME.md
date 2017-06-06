@@ -6,8 +6,7 @@
 <br>
 <br>
 
-<small>Luke Hsiao and Jervis Muindi</small>
-
+<small>Luke Hsiao and Jervis Muindi</small>  
 <small>June 2017<small>
 
 ---
