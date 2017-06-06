@@ -22,6 +22,6 @@ June 2017
 * Illustrates one of the most obvious differences between a loss-based
   congestion control algorithm and a congestion-based algorithm.
 
----?image=http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png
-
-BBR vs. CUBIC Goodput for 60-second flow on a 100-Mbps/100-ms link.
+---
+BBR vs CUBIC on a 100Mbps/100-ms link.
+![Fig8](http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png)
