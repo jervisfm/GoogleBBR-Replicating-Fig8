@@ -45,7 +45,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 ---
 
 ### Experimental Setup  
-- Ubuntu 16.04 LTS upgraded with [v4.11.1](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.11.1/) of the Linux kernel
+- Ubuntu 16.04 LTS VM with [v4.11.1](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.11.1/) of the Linux kernel
 - [Mahimahi](http://mahimahi.mit.edu/) Network Emulator
   - Infinite buffer on bottleneck link
 - Google Cloud `n1-standard-2` instance
