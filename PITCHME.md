@@ -1,4 +1,4 @@
-### ReBBR: Reproducing BBR Performance on Lossy Networks
+## ReBBR: Reproducing BBR Performance on Lossy Networks
 
 <br>
 <br>
@@ -11,7 +11,7 @@
 
 ---
 
-#### Introduction: BBR Congestion-based Congestion Control  
+### Introduction: BBR Congestion-based Congestion Control  
 
 - Tries to maximize throughput and minimize latency
 - Does so by estimating the bottleneck bandwidth and round-trip propagation
@@ -22,7 +22,7 @@
 
 ---
 
-#### Sub-Result: BBR performs better than CUBIC in Lossy Networks  
+### Sub-Result: BBR performs better than CUBIC in Lossy Networks  
 - We focus on the claim that BBR is better than CUBIC in networks with
   non-negligible loss rates.
 - Illustrates one of the most obvious differences between a loss-based
@@ -41,7 +41,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 
 ---
 
-#### Experimental Setup  
+### Experimental Setup  
 - Ubuntu 16.04 LTS upgraded with [v4.11.1](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.11.1/) of the Linux kernel
 - [Mahimahi](http://mahimahi.mit.edu/) Network Emulator
   - Infinite buffer on bottleneck link
@@ -51,7 +51,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 
 ---
 
-#### Reproducing Figure 8
+### Reproducing Figure 8
 
 ![Fig8](http://deliveryimages.acm.org/10.1145/3030000/3022184/vanjacobson8.png)
 
@@ -78,14 +78,14 @@ dropped at the same time (LRO/GRO settings).
 
 ---
 
-#### Exploration Experiments
+### Exploration Experiments
 - Comparing BBR to other TCP congestion control algorithms
 - Evaluating the effect of bottleneck bandwidth and round trip time
 - BBR vs. CUBIC on a Verizon LTE Trace
 
 ---
 
-#### BBR vs. Other TCP Congestion Control
+### BBR vs. Other TCP Congestion Control
 
 ![exp2](mahimahi/figures/experiment2.png)
 
@@ -96,7 +96,7 @@ for high BDP with potential packet loss. Evaluated on 30-second flows.
 
 ---
 
-#### Evaluating Effect of BW and RTT
+### Evaluating Effect of BW and RTT
 
 <br>
 <br>
@@ -105,17 +105,17 @@ How does BBR compare against CUBIC for different bottleneck bandwidths
 and different RTT values?
 
 +++
-##### Varying Bottleneck Bandwidth
+#### Varying Bottleneck Bandwidth
 
 ![exp1](mahimahi/figures/experiment1.png)
 
 +++
-##### Varying Round Trip Time
+#### Varying Round Trip Time
 
 ![exp3](mahimahi/figures/experiment3.png)
 
 ---
-#### BBR vs CUBIC on a Cellular Link
+### BBR vs CUBIC on a Cellular Link
 
 All other experiments had fixed bandwidths and delays. How does BBR compare to
 CUBIC when these values change over time?
@@ -137,14 +137,14 @@ Experiment using the 140-second Verizon LTE trace provided with Mahimahi.
 
 ---
 
-#### Challenges
+### Challenges
 - Default send and receive buffer maximums in Ubuntu can skew results.
 - Misconfiguring Mahimahi buffer sizes can cause incorrect results.
 - Initially, deadlock could occur between our Python client and server processes.
 
 ---
 
-#### Summary
+### Summary
 - Our experiments support the claim of the original paper: in general, BBR
   performs better than CUBIC for non-negligible loss rates.
 - We find that this behavior holds true across varied bandwidths and RTTs
