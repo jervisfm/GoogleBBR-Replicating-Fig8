@@ -1,4 +1,4 @@
 # GitPitch Settings
 slide-number : true
 transition : none
-background-size : contain
+background-size : auto
