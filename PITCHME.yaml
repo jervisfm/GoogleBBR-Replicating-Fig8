@@ -2,3 +2,5 @@
 slide-number : true
 transition : none
 background-size : auto
+vertical-center : false
+theme-override : assets/PITCHME.css
