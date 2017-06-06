@@ -87,9 +87,11 @@ dropped at the same time (LRO/GRO settings).
 
 ---
 
-#### BBR vs. Other TCp Congestion Control
+#### BBR vs. Other TCP Congestion Control
 
 ![exp2](mahimahi/figures/experiment2.png)
 
-- <small>BIC designed for "long fat networks"</small>
-- <small>Westwood designed for high DBP with potential packet loss</small>
+<small>
+BIC designed for "long fat networks" while <small>Westwood was designed
+for high DBP with potential packet loss. Evaluated on 30-second flows.
+</small>
