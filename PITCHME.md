@@ -54,6 +54,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 
 ![our_fig_8](mahimahi/figures/figure8.png)
 
+<small>
 - Our results agree with the published figure, with minor differences
   - Like the original, CUBIC achieves slightly better throughput than BBR for
     extremely low loss rates.
@@ -61,6 +62,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
     unlike the original paper. This is likely due to a difference in the
     implmenentation of the loss process in mahimahi vs. the netem-based
     emulation used by the authors.
+</small>
 
 Note:
 Specifically, there are two possible factors: (1) the size of the initial
@@ -69,6 +71,8 @@ later than CUBIC would (discussed in this developer thread), and (2) the
 current implementation of the ProbeRTT mechanism prioritized simplicity over
 performance, which can result in ~2% penalty in throughput because BBR spends
 those portions of time with a minimal number of packets in flight.
+Differences in emulation: level of correlation of drops, or number of packets
+dropped at the same time (LRO/GRO settings).
 
 +++
 
