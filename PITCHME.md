@@ -65,7 +65,7 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 +++
 #### Our Results
 - CUBIC achieves slightly better throughput than BBR for extremely low loss rates.
-- BBR throughput drop until about 45% loss unlike the original paper.
+- BBR throughput does not drop until about 45% loss unlike the original paper.
     - This is likely due to a difference in the implementation of the loss
       process in Mahimahi vs. the `netem`-based emulation used by the authors.
 
@@ -141,7 +141,6 @@ Experiment using the 140-second Verizon LTE trace provided with Mahimahi.
 
 ### Challenges
 - Default send and receive buffer maximums in Ubuntu can skew results.
-- Misconfiguring Mahimahi buffer sizes can cause incorrect results.
 - Initially, deadlock could occur between our Python client and server processes.
 
 ---
@@ -151,4 +150,4 @@ Experiment using the 140-second Verizon LTE trace provided with Mahimahi.
   performs better than CUBIC for non-negligible loss rates.
 - We find that this behavior holds true across varied bandwidths and RTTs
 - Reproduce our results using [our GitHub repository](https://github.com/jervisfm/rebbr#step-by-step-instructions).
-  Takes about 8.5 hours to run all experiments.
+  - It takes about 8.5 hours to run all experiments.
