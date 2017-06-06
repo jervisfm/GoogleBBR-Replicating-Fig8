@@ -44,9 +44,10 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 #### Experimental Setup  
 - Ubuntu 16.04 LTS upgraded with [v4.11.1](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.11.1/) of the Linux kernel
 - [Mahimahi](http://mahimahi.mit.edu/) Network Emulator
+  - Infinite buffer on bottleneck link
 - Google Cloud `n1-standard-2` instance
-- Infinite buffer on bottleneck link
 - 6.25MB maximum send and receive window sizes
+- Python client sending stream of data to server over emulated link.
 
 ---
 
@@ -60,13 +61,10 @@ BBR vs. CUBIC throughput for 60-second flows on a 100Mbps/100-ms link with
 
 +++
 
-- Our results agree with the published figure, with minor differences
-  - Like the original, CUBIC achieves slightly better throughput than BBR for
-    extremely low loss rates.
-  - In our experiments, we don't see BBR throughput drop until about 45% loss
-    unlike the original paper. This is likely due to a difference in the
-    implementation of the loss process in Mahimahi vs. the netem-based
-    emulation used by the authors.
+- CUBIC achieves slightly better throughput than BBR for extremely low loss rates.
+- BBR throughput drop until about 45% loss unlike the original paper.
+    - This is likely due to a difference in the implementation of the loss
+      process in Mahimahi vs. the `netem`-based emulation used by the authors.
 
 Note:
 Specifically, there are two possible factors: (1) the size of the initial
